@@ -1473,6 +1473,6 @@ body {
 }
 @media screen and (max-width: 390px) {
     .section04 .inner .item {
-        height: 120vh;
+        height: 100vh;
     }
 }

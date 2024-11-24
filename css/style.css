@@ -46,7 +46,7 @@
     cursor: pointer;
     position: fixed;
     right: 30px;
-    bottom: 40px;
+    bottom: 80px;
     z-index: 5;
     background-color: #fff;
     border-radius: 50%;
@@ -140,8 +140,8 @@ body {
     margin: 40px;
 }
 .header .inner .gnb > li .depth02 button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: 20px;
     cursor: pointer;
     background-color: transparent;
@@ -340,6 +340,7 @@ body {
 }
 .section01 {
     width: 100%;
+    overflow:hidden;
 }
 .section01 .inner {
     width: 100%;
@@ -694,6 +695,13 @@ body {
 .section03 .inner .sec03 .swiper-slide .text p {
     font-family: 'medium';
     margin-bottom: 15px;
+    
+    /* 말줄임표 1줄 */
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .section03 .inner .sec03 .swiper-slide .text span {
     font-family: 'semibold';
@@ -853,18 +861,20 @@ body {
     transition: 0.5s;
 }
 .section04 .inner .item > div.on {
+    width: 100%;
     opacity: 1;
     transform: translateY(0);
     z-index: 2;
 }
 .section04 .inner .item > div .box_wrap {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
 }
 .section04 .inner .item > div .box_wrap .box {
-    width: 23%;
+    width: 22%;
 }
 .section04 .inner .item > div .box_wrap .box .text {
     cursor: default;
@@ -1040,10 +1050,22 @@ body {
     font-family: 'semibold';
     font-size: 18px;
     margin-bottom: 7px;
+        /* 말줄임표 1줄 */
+        white-space: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
 }
 .section06 .inner .sec06 .swiper-slide .text span {
     font-family: 'regular';
     word-break: keep-all;
+    /* 말줄임표 3줄 */
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .symbol {
     cursor: default;
@@ -1145,4 +1167,78 @@ body {
     color: #fff;
     display: flex;
     column-gap: 7px;
+}
+
+@media screen and (max-width:1280px) {
+    .section01 .inner, .section02 .inner, .section03 .inner {
+        margin:100px auto;
+    }
+    .section04 .inner .item {
+        height:90vh;
+   }
+   .section06 .inner .sec06 .swiper-slide {
+    height:max-content;
+   }
+   .section06 .inner .sec06 .swiper-slide img {
+    height: 55%;
+   }
+   .sec04 {
+    width: 90% !important;
+   }
+
+}
+@media screen and (max-width:960px) {
+    .pc_nav{
+        display:none;
+    }
+    .main_visual{
+        margin-bottom: 0px;
+    }
+    .section01 .inner, .section03 .inner, .section04 .inner,.section05 .inner, .section06 .inner {
+        padding:0 25px;
+        margin: 80px auto;
+    }
+    .section02 .inner{
+        margin: 80px auto;
+        height: 70vh;
+        padding: 0;
+    }
+    .section02 .inner h3{
+        width:auto;
+        font-size: 120px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: normal;
+        backdrop-filter: blur(1.5px);
+        color: #000;
+    }
+    .section02 .inner img.scroll_on {
+        transform: scale(1.2);
+    }
+    .section03 {
+        display:inline-block;
+    }
+    .section04 .inner .item {
+        margin: 100px 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .section04 .inner .item > div .box_wrap {
+        justify-content: center;
+    }
+    .section04 .inner .item > div .box_wrap .box {
+        width:30%;
+    }
+    .section04 .inner .item > div .box_wrap .box.none960 {
+        display:none;
+    }
+    .section05 .inner {
+        height: max-content;
+    }
+    .section05 .inner .box img {
+        height: max-content;
+    }
+    .section05 .inner .box .text {
+        padding: 20px;
+    }
 }

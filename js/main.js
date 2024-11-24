@@ -158,11 +158,14 @@ $(function () {
   /* section03 슬라이드 */
   var swiper = new Swiper(".sec03", {
     rewind: true,
-    slidesPerView: 3,
+    slidesPerView: 2,
     breakpoints: {
-      //1280보다 클 경우
+      //960보다 클 경우
       960: {
         slidesPerView: 4,
+      },
+      760: {
+        slidesPerView: 3,
       },
     },
     spaceBetween: 20,
@@ -173,11 +176,20 @@ $(function () {
   });
   /* section04 슬라이드 */
   var swiper = new Swiper(".sec04", {
-    slidesPerView: 5,
+    slidesPerView: 2,
     breakpoints: {
       //1280보다 클 경우
       960: {
         slidesPerView: 7,
+      },
+      760: {
+        slidesPerView: 5,
+      },
+      520: {
+        slidesPerView: 4,
+      },
+      390: {
+        slidesPerView: 3,
       },
     },
     spaceBetween: 20,
@@ -188,11 +200,14 @@ $(function () {
   });
   /* section06 슬라이드 */
   var swiper = new Swiper(".sec06", {
-    slidesPerView: 2.4,
+    slidesPerView: 1.4,
     breakpoints: {
       //1280보다 클 경우
       960: {
         slidesPerView: 3.4,
+      },
+      500: {
+        slidesPerView: 2.4,
       },
     },
     spaceBetween: 20,

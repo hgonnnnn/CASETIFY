@@ -1227,7 +1227,7 @@ body {
     }
     .section04 .inner .item {
         margin: 100px 0;
-        height: 100vh;
+        height: 120vh;
         overflow: hidden;
     }
     .section04 .inner .item > div .box_wrap {
@@ -1280,7 +1280,7 @@ body {
     .section04 .inner .item {
         margin: 0;
         margin-top: 40px;
-        height: 115vh;
+        height: 135vh;
     }
     .section01 .inner .right .box:last-child p {
         font-size: 32px;
@@ -1320,7 +1320,7 @@ body {
         height: 40vh;
     }
     .section04 .inner .item {
-        height: 100vh;
+        height: 130vh;
     }
     .footer .inner .center ul {
         flex-wrap: wrap;
@@ -1389,7 +1389,7 @@ body {
         font-size: 16px;
     }
     .section04 .inner .item {
-        height: 87vh;
+        height: 80vh;
     }
     .section05 .inner h3, .section06 .inner h3 {
         font-size: 17px;
@@ -1419,9 +1419,6 @@ body {
     .section04 .inner .item > div .box_wrap {
         column-gap: 2%;
         row-gap: 20px;
-    }
-    .section04 .inner .item {
-        height: 80vh;
     }
     .section06 .inner .sec06 .swiper-slide .text {
         height: max-content;
@@ -1459,9 +1456,6 @@ body {
         width: 100%;
         font-size: 40px;
     }
-    .section04 .inner .item {
-        height: 75vh;
-    }
     .section04 .inner .item > div .box_wrap .box .text strong {
         /* 말줄임표 1줄 */
         white-space: normal;
@@ -1477,6 +1471,8 @@ body {
         row-gap: 15px;
     }
 }
-@media screen and (max-width:365px) {
-    .section04 .inner .item {height: 70vh;}
+@media screen and (max-width: 390px) {
+    .section04 .inner .item {
+        height: 120vh;
+    }
 }

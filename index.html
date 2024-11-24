@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASETiFY</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
 </head>
 <script src="lib/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="js/main.js"></script>
 
 <body>
@@ -249,7 +252,7 @@
         </div><!-- .inner end -->
     </section><!-- .section02 end -->
 
-    <section class="section03">
+    <section class="section03" data-aos="fade-up">
         <div class="inner">
             <h3>Trending Designs!</h3>
             <div class="swiper sec03">
@@ -310,7 +313,7 @@
             <h3>CASETiFY Artist</h3>
             <div class="swiper sec04">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide on">
+                    <div class="swiper-slide on" data-aos="fade-up" data-aos-delay="500">
                         <a href="#" onclick="return false">
                             <img src="img/sec04/item07.jpg" alt="에디 강">
                         </a>
@@ -320,7 +323,7 @@
                         </div><!-- .text end -->
                     </div><!-- .slide end -->
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="600">
                         <a href="#" onclick="return false">
                             <img src="img/sec04/item01.webp" alt="페티 더스트">
                         </a>
@@ -329,35 +332,35 @@
                             <span>페티 더스트</span>
                         </div><!-- .text end -->
                     </div><!-- .slide end -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="700">
                         <a href="#" onclick="return false"><img src="img/sec04/item02.webp" alt="이나파스퀘어"></a>
                         <div class="text">
                             <p>INAPSQUARE</p>
                             <span>이나파스퀘어</span>
                         </div><!-- .text end -->
                     </div><!-- .slide end -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="800">
                         <a href="#" onclick="return false"><img src="img/sec04/item03.webp" alt="스케이터 존"></a>
                         <div class="text">
                             <p>Skater JOHN</p>
                             <span>스케이터 존</span>
                         </div><!-- .text end -->
                     </div><!-- .slide end -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="700">
                         <a href="#" onclick="return false"><img src="img/sec04/item04.jpg" alt="최고심"></a>
                         <div class="text">
                             <p>Gosimperson</p>
                             <span>최고심</span>
                         </div><!-- .text end -->
                     </div><!-- .slide end -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="600">
                         <a href="#" onclick="return false"><img src="img/sec04/item05.jpg" alt="마쓰이"></a>
                         <div class="text">
                             <p>matsui</p>
                             <span>마쓰이</span>
                         </div><!-- .text end -->
                     </div><!-- .slide end -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="500">
                         <a href="#" onclick="return false"><img src="img/sec04/item08.png" alt="공칸"></a>
                         <div class="text">
                             <p>Gongkan</p>
@@ -1306,6 +1309,9 @@
             </div><!-- .btm end -->
         </div><!-- .inner end -->
     </footer><!-- .footer end -->
+    
+    <!-- AOS 넣어주기 -->
+    <script> AOS.init();</script>
 </body>
 
 </html>
